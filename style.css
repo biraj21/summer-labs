@@ -112,7 +112,7 @@ h1 {
 .description {
   font-size: min(1.3rem, 4vw);
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 3rem;
   color: var(--text-color);
   opacity: 0.9;
   font-weight: 400;
@@ -189,5 +189,337 @@ footer {
 
   .subtitle {
     margin-bottom: 1rem;
+  }
+}
+
+/* Project Pages */
+.project-content {
+  max-width: 900px;
+  text-align: left;
+  padding: 1rem;
+}
+
+.back-link {
+  display: inline-block;
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  color: var(--primary-color);
+  transform: translateX(-5px);
+}
+
+.project-content h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.project-content .subtitle {
+  text-align: center;
+}
+
+.project-description {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 2rem auto;
+  max-width: 700px;
+  color: var(--text-color);
+  opacity: 0.9;
+}
+
+/* Screenshot */
+.screenshot {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.screenshot img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.screenshot img:hover {
+  transform: scale(1.02);
+}
+
+/* Features */
+.features {
+  margin: 3rem 0;
+}
+
+.feature-section {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.feature-section h2 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.feature-section h3 {
+  color: var(--secondary-color);
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.feature-section p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.feature-note {
+  margin-top: 1.5rem;
+  font-style: italic;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+.feature-section ul,
+.feature-section ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature-section li {
+  margin-bottom: 0.8rem;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.feature-section a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.feature-section a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.feature-section ul.checkmarks {
+  list-style: none;
+  margin-left: 0;
+}
+
+.feature-section ul.checkmarks li {
+  padding-left: 0;
+}
+
+.install-options {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.install-option {
+  background: rgba(255, 255, 255, 0.4);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 2px solid rgba(78, 205, 196, 0.2);
+}
+
+code {
+  background: rgba(255, 107, 107, 0.1);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-family: "Courier New", monospace;
+  font-size: 0.95em;
+  color: var(--primary-color);
+}
+
+/* CTA Buttons */
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #ff5252;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.3);
+}
+
+.btn-secondary {
+  background: var(--secondary-color);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #45b8b0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(78, 205, 196, 0.3);
+}
+
+.btn svg {
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+/* Privacy Policy Page */
+.privacy-content {
+  max-width: 800px;
+}
+
+.privacy-section {
+  margin: 2rem 0;
+}
+
+.last-updated {
+  text-align: center;
+  font-style: italic;
+  color: var(--text-color);
+  opacity: 0.7;
+  margin-bottom: 3rem;
+  font-size: 0.95rem;
+}
+
+.policy-section {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.policy-section h2 {
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.policy-section p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.policy-section ul,
+.policy-section ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.policy-section li {
+  margin-bottom: 0.8rem;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.policy-section ul.checkmarks {
+  list-style: none;
+  margin-left: 0;
+}
+
+.policy-section a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.policy-section a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.tldr {
+  background: rgba(255, 230, 109, 0.2);
+  border: 2px solid var(--sun-color);
+}
+
+.tldr h2 {
+  color: var(--text-color);
+}
+
+.tldr p {
+  font-size: 1.1rem;
+}
+
+/* Responsive Design for Project Pages */
+@media (max-width: 768px) {
+  .project-content {
+    padding: 0.5rem;
+  }
+
+  .feature-section {
+    padding: 1.5rem;
+  }
+
+  .policy-section {
+    padding: 1.5rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .back-link {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .feature-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .feature-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .feature-section,
+  .policy-section {
+    padding: 1rem;
+  }
+
+  .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
   }
 }

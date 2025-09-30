@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy - Ask My AI - summer labs</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="content project-content privacy-content">
+        <a href="/ask-my-ai" class="back-link">← back to Ask My AI</a>
+
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">Ask My AI Extension</p>
+
+        <div class="privacy-section">
+          <p class="last-updated">Last Updated: September 30, 2025</p>
+
+          <div class="policy-section tldr">
+            <h2>TL;DR</h2>
+            <p><strong>We don't collect ANY data. Period.</strong></p>
+            <p>
+              No servers. No tracking. No analytics. The extension just opens your AI in a sidebar and pastes your
+              selected text. That's it.
+            </p>
+          </div>
+
+          <div class="policy-section">
+            <h2>How It Works</h2>
+            <p>Ask My AI is a simple browser tool that:</p>
+            <ol>
+              <li>Takes the text you select</li>
+              <li>Opens your chosen AI website in a sidebar</li>
+              <li>Pastes the text directly into the AI</li>
+            </ol>
+            <p>
+              Everything happens in <strong>your browser</strong>. No servers involved. No data sent to us. The
+              extension talks directly to the AI platform you choose.
+            </p>
+          </div>
+
+          <div class="policy-section">
+            <h2>What We Store Locally</h2>
+            <p>Two things, both stored <strong>locally</strong> in your browser (never sent to any server):</p>
+            <ul>
+              <li><strong>Your AI platform preference</strong> (ChatGPT, Claude, etc.)</li>
+              <li>
+                <strong>Your last selected text</strong> - so when you switch AI platforms, the same text is
+                automatically available
+              </li>
+            </ul>
+            <p>This data never leaves your device.</p>
+          </div>
+
+          <div class="policy-section">
+            <h2>Open Source</h2>
+            <p>
+              The entire codebase is on
+              <a href="https://github.com/biraj21/ask-my-ai" target="_blank" rel="noopener">GitHub</a>. Feel free to
+              review it and verify everything we're saying.
+            </p>
+          </div>
+
+          <div class="policy-section">
+            <h2>Chrome Permissions</h2>
+            <p>The extension needs these permissions to work:</p>
+            <ul>
+              <li><strong>contextMenus:</strong> Add "Ask My AI" to right-click menu</li>
+              <li><strong>sidePanel:</strong> Open AI in sidebar</li>
+              <li><strong>storage:</strong> Save your AI preference & last selected text locally</li>
+              <li>
+                <strong>declarativeNetRequestWithHostAccess:</strong> Remove CSP headers to allow embedding AI websites
+                in sidebar iframe
+              </li>
+              <li>
+                <strong>host_permissions & content_scripts:</strong> Access AI websites (ChatGPT, Claude, etc.) to paste
+                your selected text
+              </li>
+            </ul>
+            <p>No data is collected or sent to any external servers. Everything stays in your browser.</p>
+          </div>
+
+          <div class="policy-section">
+            <h2>Third-Party AI Platforms</h2>
+            <p>
+              When you use the extension, you're using your own AI account. Each AI platform (ChatGPT, Claude, Gemini,
+              Perplexity, etc.) has its own privacy policy that governs how they handle your data.
+            </p>
+          </div>
+
+          <div class="policy-section">
+            <h2>Questions?</h2>
+            <p>
+              Open an issue on
+              <a href="https://github.com/biraj21/ask-my-ai/issues" target="_blank" rel="noopener">GitHub</a> or reach
+              out on <a href="https://x.com/biraj21_" target="_blank" rel="noopener">Twitter/X</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="cta-buttons">
+          <a href="/ask-my-ai" class="btn btn-primary">Back to Ask My AI</a>
+          <a href="https://github.com/biraj21/ask-my-ai" target="_blank" rel="noopener" class="btn btn-secondary"
+            >View on GitHub</a
+          >
+        </div>
+
+        <div class="graphics">
+          <div class="sun"></div>
+          <div class="cloud cloud-1"></div>
+          <div class="cloud cloud-2"></div>
+        </div>
+      </div>
+
+      <footer>
+        <p>© <span id="year"></span> summer labs</p>
+      </footer>
+    </main>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

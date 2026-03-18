@@ -1,0 +1,70 @@
+---
+import Graphics from "../components/Graphics.astro";
+import SocialLinks from "../components/SocialLinks.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="summer labs">
+  <div class="content">
+    <h1>summer labs</h1>
+    <p class="subtitle">where fun never takes a vacation</p>
+    <p class="description">
+      hey! we're inspired by those endless summer days when Phineas and Ferb, and their friends turn wild ideas into
+      reality. it's not just about building cool stuff - it's about having the time of our lives while doing it! here's
+      to making awesome things and having a blast along the way.
+    </p>
+    <section class="projects">
+      <h2>projects</h2>
+      <div class="projects-column">
+        <article class="project-card">
+          <header>
+            <h3><a href="https://hangingpiece.com" target="_blank" rel="noopener">Hanging Piece</a></h3>
+            <p class="project-tag">AI Chess Coach</p>
+          </header>
+          <p>
+            Explains your mistakes and blunders in plain English and shows how you should have played instead, then
+            highlights the key idea behind the right move.
+          </p>
+          <div class="project-links">
+            <a href="https://hangingpiece.com" target="_blank" rel="noopener" class="text-link">Visit site</a>
+            <span>|</span>
+            <a href="https://x.com/hangingpiece" target="_blank" rel="noopener" class="text-link">Follow on X</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <header>
+            <h3>
+              <a
+                href="https://chromewebstore.google.com/detail/ai-anywhere-multi-ai-side/clfbemdacihopdopaanknckjkgbpando"
+                target="_blank"
+                rel="noopener">AI Anywhere</a
+              >
+            </h3>
+            <p class="project-tag">Ask text, any AI</p>
+          </header>
+          <p>
+            Right-click any selection, open your preferred AI in a sidebar, and get instant, conversational explanations
+            with the same clipboard-ready text. Add it directly from the Chrome Web Store today.
+          </p>
+          <div class="project-links">
+            <a
+              href="https://chromewebstore.google.com/detail/ai-anywhere-multi-ai-side/clfbemdacihopdopaanknckjkgbpando"
+              target="_blank"
+              rel="noopener"
+              class="text-link"
+            >
+              Install from Chrome Web Store
+            </a>
+            <span>|</span>
+            <a href="/ask-my-ai" class="text-link">Learn more</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <Graphics />
+  </div>
+
+  <Fragment slot="footer">
+    <SocialLinks />
+  </Fragment>
+</BaseLayout>

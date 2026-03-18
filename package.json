@@ -1,0 +1,19 @@
+{
+  "name": "summer-labs",
+  "version": "1.0.0",
+  "description": "summer labs website built with Astro",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.32.1",
+  "dependencies": {
+    "astro": "^6.0.5"
+  }
+}
